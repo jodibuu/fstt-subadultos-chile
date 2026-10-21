@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Si utiliza este código, cite esta versión y la memoria de título asociada."
+type: software
+title: "Procesamiento y medición semiautomatizada del espesor tisular facial en subadultos chilenos"
+authors:
+  - family-names: "Diéguez-Burgos"
+    given-names: "Josefa"
+abstract: >-
+  Código desarrollado para validación DICOM, segmentación, obtención de superficies,
+  medición asistida de espesores tisulares faciales y análisis estadístico,
+  como material metodológico complementario a una memoria de Antropología Física.
+keywords:
+  - facial soft tissue thickness
+  - forensic facial approximation
+  - computed tomography
+  - Blender
+  - Python

@@ -1,0 +1,17 @@
+# Bibliotecas para scripts Python fuera de Blender.
+# La versión del entorno original no se ha congelado; comprobar compatibilidad
+# en un entorno virtual antes de procesar datos autorizados.
+SimpleITK
+numpy
+pandas
+scipy
+scikit-learn
+scikit-image
+openpyxl
+open3d
+vedo
+Pillow
+matplotlib
+xlsxwriter
+
+# Blender utiliza su propia instalación de Python. Instalar allí openpyxl si falta.

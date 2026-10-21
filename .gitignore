@@ -1,0 +1,53 @@
+# Nunca versionar datos clínicos ni resultados por participante.
+datos_locales/
+1_DATOS_BRUTOS/
+2_PROCESAMIENTO/
+3_MALLAS_PLY/
+5_RESULTADOS/
+*backup*/
+*BACKUP*/
+
+# Imágenes, adquisiciones, mallas, tablas, salidas y registros individuales
+*.dcm
+*.nii
+*.nii.gz
+*.ply
+*.stl
+*.blend
+*.xlsx
+*.xls
+*.csv
+*.tsv
+*.jsonl
+*.log
+*.bak
+*.bat
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.npy
+*.npz
+*.pkl
+*.db
+*.sqlite
+
+# Historial, volúmenes comprimidos, documentos privados
+*.zip
+*.7z
+*.docx
+*.pdf
+*_PRIVADO*
+
+# Entornos, caché y metadatos locales
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+.env.*
+.DS_Store
+Thumbs.db
