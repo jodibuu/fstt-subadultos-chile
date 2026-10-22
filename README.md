@@ -72,4 +72,4 @@ Los archivos DICOM, NIfTI, PLY, imágenes de control, tablas de medición, resul
 
 El código se presenta como **desarrollo propio de la autora para esta memoria**, implementado con apoyo de herramientas computacionales y programación asistida. No constituye una implementación ajena atribuida a terceros.
 
-Los metadatos para citar el código se encuentran en [`CITATION.cff`](CITATION.cff). La versión archivada en Zenodo tiene el DOI [`10.5281/zenodo.23550333`](https://doi.org/10.5281/zenodo.23550333). **La licencia de reutilización del código todavía debe ser elegida por la autora**: publicar en GitHub no concede automáticamente permisos de modificación o redistribución. No se incorpora una licencia sin esa decisión.
+Los metadatos para citar el código se encuentran en [`CITATION.cff`](CITATION.cff). La versión archivada en Zenodo tiene el DOI [`10.5281/zenodo.23550333`](https://doi.org/10.5281/zenodo.23550333). El código se distribuye bajo la [licencia MIT](LICENSE). Esta licencia cubre el código fuente y no autoriza el acceso, uso ni redistribución de datos clínicos, mallas anatómicas, mediciones individuales ni de la tesis.
