@@ -1,6 +1,6 @@
 # Publicación del repositorio en GitHub
 
-Estas indicaciones corresponden a una **publicación nueva**, sin historial de Git previo. El ZIP entregado contiene código y documentación, no las tomografías ni los resultados individuales.
+Estas indicaciones documentan la preparación y comprobación de la publicación inicial. El repositorio publicado contiene código y documentación, no las tomografías ni los resultados individuales.
 
 ## Antes de hacer público el contenido
 
@@ -19,11 +19,15 @@ Estas indicaciones corresponden a una **publicación nueva**, sin historial de G
 
 Guías oficiales de GitHub: [agregar un repositorio local](https://docs.github.com/es/desktop/adding-and-cloning-repositories/adding-a-repository-from-your-local-computer-to-github-desktop?platform=windows), [publicar el proyecto](https://docs.github.com/es/desktop/adding-and-cloning-repositories/adding-an-existing-project-to-github-using-github-desktop).
 
-## Después de publicar
+## Estado de la publicación
 
-1. Copiar la dirección **real** del repositorio desde el navegador y reemplazar en la memoria la marca `[incorporar URL pública verificada]` que aparece en los anexos.
-2. Añadir en `CITATION.cff` la línea `repository-code: "https://github.com/USUARIO/fstt-subadultos-chile"` **con la URL real**, no el texto de ejemplo.
-3. Verificar nuevamente enlaces de README y documentación.
-4. Opcional: crear una versión (release) etiquetada y citar esa versión estable desde la memoria.
+El repositorio publicado es [`jodibuu/fstt-subadultos-chile`](https://github.com/jodibuu/fstt-subadultos-chile). Su versión estable inicial es [`v1.0.0`](https://github.com/jodibuu/fstt-subadultos-chile/releases/tag/v1.0.0) y está archivada en Zenodo con el DOI [`10.5281/zenodo.23550333`](https://doi.org/10.5281/zenodo.23550333).
+
+Antes de cada nueva release:
+
+1. Revisar que no se hayan incluido datos clínicos, resultados individuales ni archivos derivados.
+2. Verificar los enlaces del README y la documentación.
+3. Actualizar la versión y los metadatos de `CITATION.cff` cuando corresponda.
+4. Crear una release etiquetada y actualizar el registro de Zenodo si se quiere archivar esa versión.
 
 **Aclaración:** GitHub público permite **ver** el código. Para otorgar derechos de reutilización y redistribución se necesita definir expresamente una licencia.
