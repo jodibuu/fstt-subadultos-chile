@@ -418,7 +418,12 @@ def analyze(c,base,s1,s2,neck,args,qc):
             'Mediana_absoluta':np.median(abs(diff)),'p_t_pareada':stats.ttest_1samp(diff,0).pvalue if sd>0 else np.nan,
             'p_Wilcoxon':wil,'p_signos':stats.binomtest(positive,nz,.5).pvalue if nz else 1.,
             'Positivas':positive,'Negativas':negative,'Ceros':n-nz})
-    a=pd.DataFrame(asym)
+    asym_columns = [
+        'Par','n','Media_I','Media_D','Media_I-D','IC95_media_inf','IC95_media_sup',
+        'Mediana_I-D','IC95_mediana_inf','IC95_mediana_sup','Mediana_absoluta',
+        'p_t_pareada','p_Wilcoxon','p_signos','Positivas','Negativas','Ceros',
+    ]
+    a=pd.DataFrame(asym, columns=asym_columns)
     for name in ['t_pareada','Wilcoxon','signos']:a['p_BH_'+name]=adjust(a['p_'+name])
     tabs['Asimetria']=a
     # Asimetría por grupo: cada par usa EXCLUSIVAMENTE sujetos con ambos lados válidos.
