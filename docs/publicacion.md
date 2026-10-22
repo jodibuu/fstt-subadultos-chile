@@ -7,7 +7,7 @@ Estas indicaciones documentan la preparación y comprobación de la publicación
 1. Descomprimir `fstt-subadultos-chile_PUBLICABLE.zip` y **trabajar con la carpeta extraída**; no subir el ZIP como si fuera todo el repositorio.
 2. Verificar que la carpeta solo contenga: `codigo/`, `blender/`, `docs/`, `tests/`, `.gitignore`, `README.md`, `CITATION.cff` y `requirements.txt`.
 3. Revisar que no se hayan agregado imágenes de pacientes, ficheros DICOM/NIfTI/PLY, Excel, informes privados, logs o datos clínicos a esa carpeta.
-4. Decidir si se autorizará reutilización mediante una licencia. Si se quiere permitir uso y modificación con atribución, la autora puede optar por MIT para el código, pero esa decisión requiere su aprobación expresa. **En esta preparación no se añadió ninguna licencia**.
+4. Confirmar que la [licencia MIT](../LICENSE) se aplica al código y no a la tesis, los datos clínicos, las mallas anatómicas ni las mediciones individuales.
 
 ## Publicación con GitHub Desktop (Windows)
 
@@ -30,4 +30,4 @@ Antes de cada nueva release:
 3. Actualizar la versión y los metadatos de `CITATION.cff` cuando corresponda.
 4. Crear una release etiquetada y actualizar el registro de Zenodo si se quiere archivar esa versión.
 
-**Aclaración:** GitHub público permite **ver** el código. Para otorgar derechos de reutilización y redistribución se necesita definir expresamente una licencia.
+**Licencia:** el código se distribuye bajo la [licencia MIT](../LICENSE). La tesis mantiene sus propias condiciones de derecho de autor y las que correspondan a la Universidad de Chile; los datos clínicos, las mallas anatómicas y las mediciones individuales no se publican ni quedan autorizados por esta licencia.
