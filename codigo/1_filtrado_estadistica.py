@@ -57,8 +57,11 @@ def cargar_hoja_segura(path: str, sheet: str, columns) -> pd.DataFrame:
         return _empty_df(columns)
     try:
         df = pd.read_excel(path, sheet_name=sheet)
-    except Exception:
-        return _empty_df(columns)
+    except Exception as exc:
+        raise RuntimeError(
+            f"No se pudo leer la hoja '{sheet}' del archivo Excel '{path}'. "
+            "Se cancela el procesamiento para proteger los datos existentes."
+        ) from exc
     for c in columns:
         if c not in df.columns:
             df[c] = np.nan

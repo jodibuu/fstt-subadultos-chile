@@ -84,8 +84,11 @@ def ensure_output(base_path: str, out_path: str):
 def cargar_hoja(path, sheet, columns):
     try:
         df = pd.read_excel(path, sheet_name=sheet)
-    except Exception:
-        df = pd.DataFrame(columns=columns)
+    except Exception as exc:
+        raise RuntimeError(
+            f"No se pudo leer la hoja '{sheet}' del archivo Excel '{path}'. "
+            "Se cancela el procesamiento para proteger los datos existentes."
+        ) from exc
     for c in columns:
         if c not in df.columns:
             df[c] = np.nan

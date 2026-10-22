@@ -79,7 +79,20 @@ def aplicar_color_por_distancia(mesh, distancias):
 def procesar_modelo(nombre, ruta):
     """Aplica suavizado incremental (0-50 iter) y calcula métricas de convergencia."""
     print(f" Procesando: {nombre}")
+    ruta = Path(ruta)
+    if not ruta.is_file():
+        raise FileNotFoundError(
+            f"No existe la malla de referencia para '{nombre}': {ruta}"
+        )
     malla_original = o3d.io.read_triangle_mesh(ruta)
+    if malla_original.is_empty():
+        raise ValueError(
+            f"La malla de referencia para '{nombre}' está vacía o no se pudo leer: {ruta}"
+        )
+    if len(malla_original.vertices) == 0 or len(malla_original.triangles) == 0:
+        raise ValueError(
+            f"La malla de referencia para '{nombre}' no contiene vértices y caras válidos: {ruta}"
+        )
     calcular_normales(malla_original)
 
     v0 = np.asarray(malla_original.vertices)
@@ -139,4 +152,3 @@ def procesar_modelo(nombre, ruta):
 if __name__ == "__main__":
     for nombre, ruta in MODELOS.items():
         procesar_modelo(nombre, ruta)
-

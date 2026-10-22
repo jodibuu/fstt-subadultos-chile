@@ -74,7 +74,7 @@ El complemento depende de la API `bpy` de Blender; no se ejecuta como un script 
 
 ## Anexo J. Procesamiento estadístico y generación de resultados
 
-**Archivos:** [`codigo/estadisticas_tesis_HC3.py`](../codigo/estadisticas_tesis_HC3.py), [`codigo/boxplots_fstt_por_grupo.py`](../codigo/boxplots_fstt_por_grupo.py).
+**Archivos:** [`codigo/estadisticas.py`](../codigo/estadisticas.py), [`codigo/boxplots_fstt_por_grupo.py`](../codigo/boxplots_fstt_por_grupo.py).
 
 Identifica registros válidos, reproduce tablas descriptivas y aplica inferencia robusta HC3 en modelos factoriales de sexo × rango etario, correcciones Benjamini–Hochberg y Holm, evaluación intraobservador, análisis bilateral y asociación exploratoria de la CCU continua ajustada por edad cronológica y sexo.
 

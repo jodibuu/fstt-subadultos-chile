@@ -69,7 +69,7 @@ python codigo/preprocesar_mallas.py --excel 'D:\datos_autorizados\control_calida
 **J — Estadísticas** (usar libro exportado, no suministrado aquí):
 
 ```powershell
-python codigo/estadisticas_tesis_HC3.py 'D:\datos_autorizados\mediciones.xlsx' --salida 'D:\datos_autorizados\ANALISIS_HC3_publicacion_local'
+python codigo/estadisticas.py 'D:\datos_autorizados\mediciones.xlsx' --salida 'D:\datos_autorizados\ANALISIS_HC3_publicacion_local'
 ```
 
 El comando anterior es solo un ejemplo de rutas. Por defecto, el script crea una **subcarpeta con fecha** en el directorio de la entrada y guarda allí `RESULTADOS_HC3.xlsx`; si se indica `--salida`, esa carpeta debe estar vacía.
