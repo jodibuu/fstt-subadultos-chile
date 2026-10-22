@@ -5,6 +5,7 @@ title: "Procesamiento y medición semiautomatizada del espesor tisular facial en
 authors:
   - family-names: "Diéguez-Burgos"
     given-names: "Josefa"
+doi: "10.5281/zenodo.23550333"
 abstract: >-
   Código desarrollado para validación DICOM, segmentación, obtención de superficies,
   medición asistida de espesores tisulares faciales y análisis estadístico,
