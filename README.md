@@ -25,7 +25,7 @@ Este repositorio reúne los programas desarrollados para organizar y validar ser
 | G | Análisis de convergencia del suavizado | [`codigo/analisisconvergencia.py`](codigo/analisisconvergencia.py) |
 | H | Orientación geométrica | [`codigo/preprocesar_mallas.py`](codigo/preprocesar_mallas.py) |
 | I | Complemento de medición en Blender | [`blender/tesis_landmarks.py`](blender/tesis_landmarks.py) |
-| J | Análisis estadístico y boxplots | [`codigo/estadisticas_tesis_HC3.py`](codigo/estadisticas_tesis_HC3.py) y [`codigo/boxplots_fstt_por_grupo.py`](codigo/boxplots_fstt_por_grupo.py) |
+| J | Análisis estadístico y boxplots | [`codigo/estadisticas.py`](codigo/estadisticas.py) y [`codigo/boxplots_fstt_por_grupo.py`](codigo/boxplots_fstt_por_grupo.py) |
 
 Los anexos se explican en [docs/anexos.md](docs/anexos.md). El orden de la tabla coincide con los **Anexos A–J de la memoria de título**, no con versiones anteriores del repositorio. Para la carga inicial, consulta la [guía de publicación en GitHub](docs/publicacion.md).
 

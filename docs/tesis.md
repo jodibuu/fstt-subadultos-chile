@@ -13,6 +13,6 @@
 | §6.5.3 Convergencia | G | `codigo/analisisconvergencia.py` |
 | §6.5.4 Orientación | H | `codigo/preprocesar_mallas.py` |
 | §6.6 Landmarks, FSTT y CCU | I | `blender/tesis_landmarks.py` |
-| §6.8 Análisis estadístico y figuras | J | `codigo/estadisticas_tesis_HC3.py`, `codigo/boxplots_fstt_por_grupo.py` |
+| §6.8 Análisis estadístico y figuras | J | `codigo/estadisticas.py`, `codigo/boxplots_fstt_por_grupo.py` |
 
 **Advertencia:** la enumeración de anexos del paquete ZIP preliminar estaba desplazada, ya que no incluía el Anexo A de ética. Esta versión corrige la correspondencia con la memoria sin cambiar los nombres de los scripts.

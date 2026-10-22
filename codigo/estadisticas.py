@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """FSTT: análisis por sujeto y landmark. Nunca modifica la entrada.
 Instalar: py -m pip install numpy pandas scipy openpyxl matplotlib
-Ejecutar: py estadisticas_tesis_HC3.py "Excel_addon_tesis.xlsx"
+Ejecutar: py estadisticas.py "Excel_addon_tesis.xlsx"
 
 Modelo factorial saturado de cuatro medias, covarianza HC3, inferencia t(n-4).
 Efectos principales: contrastes equiponderados; interacción: diferencia de diferencias.
